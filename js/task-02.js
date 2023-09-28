@@ -9,11 +9,11 @@ const ingredients = [
 
 const listOfIngredients = document.querySelector("#ingredients");
 
-const allLiItems = ingredients.map((ingredient) => {
+const markup = ingredients.map((ingredient) => {
   const item = document.createElement("li");
   item.className = "item";
   item.textContent = ingredient;
   return item;
 });
 
-listOfIngredients.prepend(...allLiItems);
+listOfIngredients.prepend(...markup);

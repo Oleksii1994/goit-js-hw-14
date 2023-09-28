@@ -2,18 +2,18 @@ const decrementBtn = document.querySelector('button[data-action="decrement"]');
 
 const incrementBtn = document.querySelector('button[data-action="increment"]');
 
-const counterValue = document.querySelector("#value");
+const value = document.querySelector("#value");
 
-let total = Number(counterValue.textContent);
+let counterValue = Number(counterValue.textContent);
 
 const decrementValue = () => {
-  total -= 1;
-  counterValue.textContent = total;
+  counterValue -= 1;
+  value.textContent = total;
 };
 
 const incrementValue = () => {
-  total += 1;
-  counterValue.textContent = total;
+  counterValue += 1;
+  value.textContent = total;
 };
 
 decrementBtn.addEventListener("click", decrementValue);
